@@ -12,4 +12,8 @@ export default{
     axios.put(`${BASE_API_URL}/cupons/${id}`,cupom),
   deleteCupom: (id) =>  
     axios.delete(`${BASE_API_URL}/cupons/${id}`),
+  addSale: (sale) =>
+    axios.post(`${BASE_API_URL}/sales/`,sale),
+  getProduct: () =>
+    axios.get(`${BASE_API_URL}/products`),
 }

@@ -33,7 +33,7 @@ class ProductController extends Controller
             'price'=>'required'
         ]);
         $product = new Product([
-            'description' => $request->descrption,
+            'description' => $request->description,
             'price' => $request->price,
         ]);
         $product->save();

@@ -9,7 +9,13 @@ const Add = () =>{
   const [title,setTitle] = useState('');
   const [expires_in,setData] = useState('');
   const [quantity,setQuantitiy] = useState(0);
-  const [status,setStatus] = useState('Disable');
+  const [status,setStatus] = useState('null');
+
+  const changeState = (e) =>{
+console.log(e.target.value)
+    setStatus(e.target.value);
+    
+  }
 
   const onAddSubmit = async () => {
    
@@ -62,12 +68,21 @@ const Add = () =>{
               </div>
               <div className="form-group">
                   <label>Status</label>
-                  <input 
+                  {/* <input 
                   className="form-control" 
                   type="text"
                   value={status}
                   onChange={e =>setStatus(e.target.value)}
-                  />
+                  /> */}
+                  <select 
+                  name="select"
+                  className="custom-select my-1 mr-sm-2"
+                  onChange ={changeState}
+                  >
+                  <option value="null">Selecione uma opção...</option> 
+                  <option value="Ativado">Ativado</option> 
+                  <option value="Desativado">Desativado</option>
+                  </select>
               </div>
               <div className="form-group">
                   <button 

@@ -18,7 +18,7 @@ class CreateCupomTable extends Migration
             $table->string('title')->unique();
             $table->date('expires_in');
             $table->integer('quantity');
-            $table->enum('status', ['Enable', 'Disable']);
+            $table->enum('status', ['Ativado', 'Desativado']);
             $table->timestamps();
         });
     }

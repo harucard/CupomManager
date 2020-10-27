@@ -10,7 +10,7 @@ const Edit = () =>{
   const [title,setTitle] = useState('');
   const [expires_in,setData] = useState('');
   const [quantity,setQuantitiy] = useState(0);
-  const [status,setStatus] = useState('Disable');
+  const [status,setStatus] = useState('Desativado');
 
   const onEditSubmit = async () => {
    

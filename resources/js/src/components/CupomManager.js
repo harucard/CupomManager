@@ -31,7 +31,7 @@ const CupomManager = () => {
         if(cupons.length ===0){
             return (
                 <tr>
-                    <td colSpan="4">
+                    <td colSpan="6">
                        Não existe nenhum cupom cadastrado
                     </td>
                 </tr>
