@@ -84,7 +84,7 @@ const Edit = () =>{
               <div className="form-group">
                   <button 
                   type="button"
-                  className="btn btn-success"
+                  className="btn btn-success btn-lg btn-block"
                   onClick={onEditSubmit}
                   disabled={loading}
                   >{loading ? 'Processando...':'Editar cupom'}</button>

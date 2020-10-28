@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use \Illuminate\Http\Request;
 use App\Http\Resources\Cupom as CupomResource;
 use App\Models\Cupom;
 class CupomController extends Controller
@@ -27,7 +27,7 @@ class CupomController extends Controller
         $request->validate([
             'title' =>'required',
             'expires_in' => 'required',
-            'quantity' => 'required',
+            'quantity' => 'required|Numeric',
             'status' => 'required'
         ]);
         $cupom = new Cupom([
@@ -64,7 +64,7 @@ class CupomController extends Controller
         $request->validate([
             'title' =>'required',
             'expires_in' => 'required',
-            'quantity' => 'required',
+            'quantity' => 'required|Numeric',
             'status' => 'required'
         ]);
         $cupom = Cupom::findOrFail($id);

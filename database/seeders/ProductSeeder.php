@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
          DB::table('products')->insert([
             
             'description' =>'Produto',
-            'price' => '200.00',
+            'price' => '9.50',
         ]);
     }
 }

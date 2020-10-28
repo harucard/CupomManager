@@ -8,11 +8,11 @@ const Add = () =>{
   const [loading,setLoading] = useState(false);
   const [title,setTitle] = useState('');
   const [expires_in,setData] = useState('');
-  const [quantity,setQuantitiy] = useState(0);
+  const [quantity,setQuantitiy] = useState();
   const [status,setStatus] = useState('null');
 
   const changeState = (e) =>{
-console.log(e.target.value)
+    console.log(e.target.value)
     setStatus(e.target.value);
     
   }
@@ -27,6 +27,7 @@ console.log(e.target.value)
       history.push('/CupomManager');
     }catch{
       alert('Falha em adicionar cupom')
+      console.error();
       
     } finally{
       setLoading(false);
@@ -37,6 +38,7 @@ console.log(e.target.value)
         <AppContainer 
         title="GERENCIADOR DE CUPONS"
         >
+        
          <form>
               <div className="form-group">
                   <label>Nome</label>
@@ -44,6 +46,7 @@ console.log(e.target.value)
                   className="form-control" 
                   type="text"
                   value={title}
+                  name="title"
                   onChange={e => setTitle(e.target.value)}
                   />
               </div>
@@ -52,6 +55,7 @@ console.log(e.target.value)
                   <input 
                   className="form-control" 
                   type="date"
+                  name="expires_in"
                   value={expires_in}
                   onChange={e =>setData(e.target.value)}
                   />
@@ -62,6 +66,7 @@ console.log(e.target.value)
                   <input 
                   className="form-control" 
                   type="text"
+                  name="quantity"
                   value={quantity}
                   onChange={e =>setQuantitiy(e.target.value)}
                   />
@@ -75,7 +80,7 @@ console.log(e.target.value)
                   onChange={e =>setStatus(e.target.value)}
                   /> */}
                   <select 
-                  name="select"
+                  name="status"
                   className="custom-select my-1 mr-sm-2"
                   onChange ={changeState}
                   >
@@ -93,9 +98,7 @@ console.log(e.target.value)
                   >{loading ? 'Processando...':'Adicionar cupom'}</button>
               </div>
           </form>
-
-    
-        </AppContainer>
+</AppContainer>
     );
 };
 

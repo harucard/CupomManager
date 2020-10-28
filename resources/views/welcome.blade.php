@@ -8,8 +8,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-    <nav class="navbar mt-0 navbar-dark bg-dark mb-5">
-    <span class="navbar-text">
+    <nav class="navbar mt-0 navbar-dark bg-danger fixed-top mb-5">
+    <span class="navbar-text font-weight-bold text-white ">
    CupomManager
   </span>
 </nav>

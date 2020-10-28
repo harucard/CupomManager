@@ -46,13 +46,13 @@ const CupomManager = () => {
                 <td>{cupom.status}</td>
                 <td>
                     <Link 
-                    className="btn btn-warning" 
+                    className="btn btn-outline-warning text-dark mr-2" 
                     to={`/edit/${cupom.id}`}>
                     Editar
                     </Link>
                     <button
                      type="button" 
-                     className="btn btn-danger"
+                     className="btn btn-outline-danger"
                      onClick={()=>{
                          api.deleteCupom(cupom.id)
                          .then(fetchCupons)
@@ -68,13 +68,14 @@ const CupomManager = () => {
         ))
     }
     return (
+        
        <AppContainer
        title="Carrinho"
        >
-            
-                  <Link to="/add" className="btn btn-primary">Adicionar cupom</Link>
+            <Link to="/" className="btn btn-danger text-white ">Voltar</Link>
+              
                    <div className="table-responsive">
-                       <table className="table table-striped mt-4">
+                       <table className="table table-borderless table-hover table-sm ">
                          <thead>
                              <tr>
                                  <th>Codigo</th>
@@ -89,6 +90,7 @@ const CupomManager = () => {
                            {renderCupons() }
                          </tbody>
                        </table>
+                       <Link to="/add" className="btn btn-danger text-white ">Adicionar cupom</Link>
                        </div>
        </AppContainer>
     );
