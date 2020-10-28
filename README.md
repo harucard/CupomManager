@@ -1,61 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+###CupomManager
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+CupomManager é um app desenvolvido para validar cupons,possibilitando criar,editar,deletar e consultar.
 
-## About Laravel
+###Requerimentos
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Para a implementação  do CupomManager foi utilizado o Windows 10  as seguintes ferramentas:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+NodeJS v14.7
+Xampp v3.2.4
+Visual Studio Code
+composer v2.0.3
+laravel
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  #NodeJS
+  
+  Node.js trata-se de um software open-source, cross-platform, e de um runtime de JavaScript que execute código de JavaScript a nível backend e frontend (dependendo apenas das bibliotecas e dos frameworks usados para esse mesmo fim). O runtime de JavaScript é constituído pelos seguintes commandos - node package manage (npm), e npx (node package extractor). Ao passo que o primeiro comando tem como propósito correr código armazenado num package de nodejs, e instalar software globalmente ou localmente, já o npx (node package extractor), tem como propósito instalar a nível local código instalado globalmente. Um exemplo disso é o npx create-react-app que tem como propósito instalar a nível local um template vazio de um site de react, pronto a ser usado, através de uma fórmula instalada com npm. Tudo isto é escrito em C++ e boost com paralelização, resultando numa tecnologia opensource bem mais robusta do que JavaScript, tal como o conhecia-mos no final dos anos 90, inícios da década de 2000 (aliás a própria sintaxe foi completamente alterada desde então, se bem que mantém-se bem trabalhado para fins de backward compability). Node.js usa recorrentemente language bindings com sistemas de JavaScript mais universais, de modo a permitir, efetivamente backwards compability, e garantirmos-nos que há o mínimo de deprecações no código com o passar do tempo. Exceções disso, são alguns de JavaScript vanilla, que não são incluídos em node mas que fazem parte de JavaScript vanilla, e que podem ser importados para nodejs. Um exemplo disso é o comando readine(), que precisa de ser importado e sofre de algumas alterações. Ainda assim o código é bem mais buletproof do que o código de Python, que depreca com relativa facilidade. O código de nodejs é baseado em event-driven architecture sendo capaz de asynchronous I/O. O código de node.js é optimizado para ser corrido em tempo realm tratando-se também de um ditribuído. O Node.js (ambiente de execução Javascript no servidor) foi implementado baseado no interpretador V8 JavaScript Engine (interpretador de JavaScript em C++ com código aberto do Google, utilizado no Chrome), com desenvolvimento mantido pela fundação Node.js em parceria com a Linux Foundation.
+  
+   #Xampp
+   
+   XAMPP é um pacote com os principais servidores de código aberto do mercado, incluindo FTP, banco de dados MySQL e Apache com suporte as linguagens PHP e Perl. De plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB(embora ainda seja utilizado MySql em algumas versões), o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl,além de um cliente FTP. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste.
+   
+   #Visual Studio Code
+   
+   O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. Ele também é customizável, fazendo com que os usuários possam mudar o tema do editor, teclas de atalho e preferências. Ele é um software livre e de código aberto, apesar do download oficial estar sob uma licença proprietária.
 
-## Learning Laravel
+O Visual Studio Code é baseado no Electron, uma framework que é usada para desenvolver aplicativos Node.js para o desktop rodando no motor de layout Blink. Apesar de usar o Electron como framework, o software não usa o Atom e em seu lugar emprega o mesmo componente editor (codenomeado "Monaco") usado no Visual Studio Team Services (anteriormente chamado de Visual Studio Online).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#Composer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O Composer é do que um gerenciador de dependências. Com ele você define a lista de bibliotecas (e versões) das quais o seu projeto depende, e ele cuida da instalação, organização e “inclusão” das mesmas.Como em nossa estrutura a instalação é feita de forma diferente de outros ambientes, nós disponibilizamos este passo a passo. Porém, qualquer problema pedimos que contacte seu desenvolvedor.
 
-## Laravel Sponsors
+###Configuração e instalação das ferramentas
+ 
+ O ambiente de desenvolvimento deve ser configurado utilizando os seguintes passos:
+ 
+ 1-Instale o NodeJS
+   A instalação do NodeJS é bem tranquila.Basta baixar o arquivo executavel e instalar seguindo os passos padrões durante a instalação.
+ 2-Instale Xampp
+   Durante a instalação do Xampp,haverá a opção de escolher servidores e algumas ferramentas.Por padrão o Xampp instala o PHP e o Apache.Durante a instalação,marcar o servidor      MySql para instalação e marcar a opção que coloca o php no path do sistema.
+ 3-Execute o Xampp e inicie o servido apache e o MySQL 
+ 4-Baixe o codigo fonte do projeto no repositório https://github.com/harucard/CupomManager
+ 4-Após baixar o projeto,abra o prompt de comando no caminho da pasta dos arquivos e execute para instalar as dependências  o seguinte comando: 
+        NPM INSTALL
+ 5-Abra o terminal na pasta dos arquivos e execute
+       PHP artisan serve
+ 6-Acesse o navegador no endereço localhost:8000 e se tudo estiver correto o app irá carregar
+ 
+ ### Funcionalidades Implementadas
+ 
+ Tela de checkout
+ Tela de gerenciamento de cupos
+ Tela de adição e edição dos cupons
+ Criação das tabelas de produto,venda e cupom
+ Implementação das validações de inserção e update no BackEnd 
+ Implementação utilizando a biblioteca ReactJS
+ Utilização do Bootstrap 4 para estilizão da telas
+ Criação das Funções CRUD(Create,Read,Update,Destroy) no FrontEnd
+ Implementação das migrations,models,controllers,requerido no padrão MVC como especificação do laravel
+ 
+ ###Funcionalidades não implementadas
+  
+  Regra de Validação dos Cupons
+  Função do Input para entrada do nome do cupom na tela do carrinho
+  Função do Botão Venda
+  
+  
+ ###Considerações
+ 
+ A respeito das funcionalidades não implementadas,é importante afirmar que as funcionalidades estão implementadas em códigos mas os dados não estão sendo carregados nas telas
+ pois alguns componentes do React utiliza o conceito de componenetes controlados e não controlados,que tem como vantagem um  maior controle do componente mas dificulta a implementação demandando mais tempo
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ 
+   
+   
