@@ -6414,10 +6414,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/style/style.css":
-/*!**************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/src/style/style.css ***!
-  \**************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/style/Cart.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/src/style/Cart.css ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6426,7 +6426,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sale{\r\n    display:flex;\r\n    flex-direction:row;\r\n    justify-content: space-between;\r\n}\r\n.cupon{\r\n    display:flex;\r\n  flex-direction: column;\r\n    font-weight: bold;\r\n\r\n}\r\n.btnCupom{\r\n    margin-top :52px;\r\n}\r\n.cuponForm{\r\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: space-between;\r\n}\r\n\r\n.results{\r\n    \r\n    display:flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    border:1px solid #ccc;\r\n    font-weight: bold;\r\n    \r\n}\r\n.container{\r\n    display:flex;\r\n    flex-direction: column;\r\n}\r\n.btnsale{\r\n    margin-top:10px;\r\n    \r\n}\r\n.title,.value{\r\ndisplay:flex;\r\nflex-direction: column;\r\n}\r\n.value{\r\n    margin-right: 10px;\r\n}\r\n.title{\r\n    \r\n    margin-left: 30px;\r\n}\r\n\r\n#input{\r\n   border:1px solid #ccc;\r\n   outline: 0;\r\n}\r\n", ""]);
+exports.push([module.i, ".sale{\r\n    display:flex;\r\n    flex-direction:row;\r\n    justify-content: space-between;\r\n}\r\n.cupon{\r\n    display:flex;\r\n  flex-direction: column;\r\n    font-weight: bold;\r\n\r\n}\r\n.btnCupom{\r\n    margin-top :52px;\r\n}\r\n.cuponForm{\r\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: space-between;\r\n}\r\n\r\n.results{\r\n    \r\n    display:flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    border:1px solid #ccc;\r\n    font-weight: bold;\r\n    \r\n}\r\n.container{\r\n    display:flex;\r\n    flex-direction: column;\r\n}\r\n.btnsale{\r\n    margin-top:10px;\r\n    \r\n}\r\n.title,.value{\r\ndisplay:flex;\r\nflex-direction: column;\r\n}\r\n\r\n\r\n#input{\r\n   border:1px solid #ccc;\r\n   outline: 0;\r\n}\r\n.containerId{\r\n    \r\n    margin:0 auto;\r\n}\r\n", ""]);
 
 // exports
 
@@ -71494,7 +71494,7 @@ var Add = function Add() {
     className: "form-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "button",
-    className: "btn btn-success",
+    className: "btn btn-danger",
     onClick: onAddSubmit,
     disabled: loading
   }, loading ? 'Processando...' : 'Adicionar cupom'))));
@@ -71548,8 +71548,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api */ "./resources/js/src/api.js");
-/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/style.css */ "./resources/js/src/style/style.css");
-/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _style_Cart_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/Cart.css */ "./resources/js/src/style/Cart.css");
+/* harmony import */ var _style_Cart_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_Cart_css__WEBPACK_IMPORTED_MODULE_3__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -71588,10 +71588,15 @@ var Cart = function Cart() {
       desconto = _useState8[0],
       setDesconto = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
       _useState10 = _slicedToArray(_useState9, 2),
-      cupons = _useState10[0],
-      setCupoms = _useState10[1];
+      word = _useState10[0],
+      setWord = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      _useState12 = _slicedToArray(_useState11, 2),
+      cupons = _useState12[0],
+      setCupoms = _useState12[1];
 
   var fetchProducts = function fetchProducts() {
     _api__WEBPACK_IMPORTED_MODULE_2__["default"].getProduct().then(function (res) {
@@ -71610,9 +71615,19 @@ var Cart = function Cart() {
   var getCupoms = function getCupoms() {
     _api__WEBPACK_IMPORTED_MODULE_2__["default"].getAllCupoms().then(function (res) {
       var result = res.data;
-      console.log(result.data);
       setCupoms(result.data);
     });
+  };
+
+  var searchCupom = function searchCupom(e) {
+    if (e.target.value !== null) {
+      setWord(e.target.value);
+      getCupoms();
+      var result = cupons.filter(function (cupom) {
+        return cupom.title === word;
+      });
+      console.log(result);
+    }
   };
 
   var applyCupom = function applyCupom(e) {};
@@ -71646,7 +71661,7 @@ var Cart = function Cart() {
     fetchProducts();
   }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
+    className: "containerId"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/CupomManager",
     className: "btn btn-danger btn-lg btn-block mb-5 mt-5"
@@ -71963,15 +71978,15 @@ var Edit = function Edit() {
 
 /***/ }),
 
-/***/ "./resources/js/src/style/style.css":
-/*!******************************************!*\
-  !*** ./resources/js/src/style/style.css ***!
-  \******************************************/
+/***/ "./resources/js/src/style/Cart.css":
+/*!*****************************************!*\
+  !*** ./resources/js/src/style/Cart.css ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./style.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/style/style.css");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./Cart.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/style/Cart.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

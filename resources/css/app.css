@@ -5,3 +5,12 @@ body{
 .navbar{
     margin-top: 0;
 }
+
+#app{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+   
+}

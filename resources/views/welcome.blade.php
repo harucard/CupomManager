@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>Laravel</title>
+        <title>CupomManager</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+      
     </head>
     <body>
     <nav class="navbar mt-0 navbar-dark bg-danger fixed-top mb-5">
@@ -13,7 +14,13 @@
    CupomManager
   </span>
 </nav>
-      <div id="app"></div>
+      <div id="app" style=" width: 100vw;
+        height: 100vh;         
+        display: flex;
+        flex-direction: row;
+        justify-content: center;         
+        align-items: center
+"></div>
 <script src="{{ asset('js/app.js') }}" ></script>
        </div>
     </body>

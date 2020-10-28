@@ -92,7 +92,7 @@ const Add = () =>{
               <div className="form-group">
                   <button 
                   type="button"
-                  className="btn btn-success"
+                  className="btn btn-danger"
                   onClick={onAddSubmit}
                   disabled={loading}
                   >{loading ? 'Processando...':'Adicionar cupom'}</button>

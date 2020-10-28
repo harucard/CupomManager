@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import {Link} from 'react-router-dom';
 import api from '../api'
-import styles from '../style/style.css'
+import styles from '../style/Cart.css'
 
 const Cart = () => {
     
@@ -9,6 +9,7 @@ const Cart = () => {
     const [valor,setValor] = useState(0);
     const [total,setTotal] = useState(0);
     const [desconto,setDesconto] = useState(0);
+    const [word,setWord] = useState('');
     const [cupons,setCupoms] = useState(null);
     
 
@@ -29,12 +30,23 @@ const Cart = () => {
     const getCupoms = () =>{
         api.getAllCupoms().then(res=>{
             const result = res.data;
-            console.log(result.data)
+            
             setCupoms(result.data);
         })
      }
 
-     const applyCupom = (e) =>{
+     const searchCupom = (e) =>{
+         if(e.target.value!==null){
+          setWord(e.target.value);
+          getCupoms();
+         const result = cupons.filter((cupom)=>(
+           cupom.title===word
+           ))  
+           console.log(result)
+        }
+    }
+       
+      const applyCupom = (e) =>{
         
      }
 
@@ -77,7 +89,7 @@ useEffect(() => {
 },[]);
 
     return (
-        <div className="container">
+        <div className="containerId">
           <Link to="/CupomManager" className="btn btn-danger btn-lg btn-block mb-5 mt-5">Gerenciar Cupons</Link> 
         <div className="card">
             <div className="card-header">Carrinho</div>
@@ -101,7 +113,9 @@ useEffect(() => {
              <div className="cupon">
              <div className="cuponForm">
               <span>Cupom</span>
-              <input id="input" type="text"/>
+              <input id="input" type="text"
+           
+              />
               </div>
               <button
                onClick={applyCupom}
