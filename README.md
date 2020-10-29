@@ -36,7 +36,7 @@ O Composer é do que um gerenciador de dependências. Com ele você define a lis
  
  <br>1-Instale o NodeJS</br>
    A instalação do NodeJS é bem tranquila.Basta baixar o arquivo executavel e instalar seguindo os passos padrões durante a instalação.
- 2-Instale Xampp
+ <br>2-Instale Xampp</br>
    Durante a instalação do Xampp,haverá a opção de escolher servidores e algumas ferramentas.Por padrão o Xampp instala o PHP e o Apache.Durante a instalação,marcar o servidor      MySql para instalação e marcar a opção que coloca o php no path do sistema.
  <br>3-Execute o Xampp e inicie o servido apache e o MySQL </br>
 <br> 4-Baixe o codigo fonte do projeto no repositório https://github.com/harucard/CupomManager</br>
