@@ -41,12 +41,14 @@ O Composer é do que um gerenciador de dependências. Com ele você define a lis
  <br>3-Execute o Xampp e inicie o servido apache e o MySQL </br>
 <br> 4-Baixe o codigo fonte do projeto no repositório https://github.com/harucard/CupomManager</br>
  <br>5-Após baixar o projeto,abra o prompt de comando no caminho da pasta dos arquivos e execute para instalar as dependências  o seguinte comando: </br>
-        <p align="center"><b>NPM INSTALL</b></p>
+        <p align="center"><b>npm install</b></p>
  <br>6-Abra o terminal na pasta dos arquivos e execute</br>
-       <p align="center"><b>PHP artisan serve</b></p>
+       <p align="center"><b>php artisan serve</b></p>
  <br>7-Acesse o navegador no endereço localhost:8000 e se tudo estiver correto o app irá carregar</br>
  <br>8-acesse localhost no browser e entre no PhPMyAdmin e crie uma base de dados.</br>
  <br>9-Para conectar ao banco edite as variáveis DB_DATABASE(nome do banco),DB_USERNAME(usuario),DB_PASSWORD(senha)  do arquivo .env na raiz do projeto.</br> 
+ <br>10-Para enviar as tabelas e as seeds para o banco e quando quiser resetar o banco também, digite no terminal na pasta do projeto</br>
+            <p align="center"><b>php artisan migrate:refresh --seed</b></p>
  
  ### Funcionalidades Implementadas
  
