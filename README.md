@@ -1,4 +1,4 @@
-###CupomManager
+<h1CupomManager</h1>
 
 CupomManager é um app desenvolvido para validar cupons,possibilitando criar,editar,deletar e consultar.
 
@@ -45,6 +45,8 @@ O Composer é do que um gerenciador de dependências. Com ele você define a lis
  5-Abra o terminal na pasta dos arquivos e execute
        PHP artisan serve
  6-Acesse o navegador no endereço localhost:8000 e se tudo estiver correto o app irá carregar
+ 7-acesse localhost no browser e entre no PhPMyAdmin e crie uma base de dados.
+ 8-Para conectar ao banco edite as variáveis DB_DATABASE(nome do banco),DB_USERNAME(usuario),DB_PASSWORD(senha)  do arquivo .env na raiz do projeto. 
  
  ### Funcionalidades Implementadas
  
