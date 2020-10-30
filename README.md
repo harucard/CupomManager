@@ -11,6 +11,7 @@ Para a implementação  do CupomManager foi utilizado o Windows 10  as seguintes
 <br>Visual Studio Code</br>
 <br>Composer v2.0.3</br>
 <br>Laravel</br>
+<br>Reacts</br>
 
   #### NodeJS
   
@@ -38,6 +39,12 @@ De acordo com uma pesquisa feita em Março de 2015 com desenvolvedores, o Larave
 
 Laravel foi desenvolvido sob o MIT License, tendo seu código-fonte hospedado no GitHub. Atualmente encontra-se na versão 8.0.0.[6]
 
+### ReactJs
+
+O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.
+Em 2015, o Facebook anunciou o módulo React Native, que em conjunto com o React, possibilita o desenvolvimento de aplicativos para Android e iOS utilizando componentes de interface de usuário nativos de ambas plataformas, sem precisar recorrer ao HTML.
+Na pesquisa de 2018 sobre hábitos de desenvolvedores do site Stack Overflow, o React foi a terceira biblioteca ou framework mais citado pelos usuários e desenvolvedores profissionais, ficando atrás somente do Node.js e Angular, respectivamente. 
+
 ### Configuração e instalação das ferramentas
  
  O ambiente de desenvolvimento deve ser configurado utilizando os seguintes passos:
@@ -50,6 +57,9 @@ Laravel foi desenvolvido sob o MIT License, tendo seu código-fonte hospedado no
 <br> 4-Baixe o codigo fonte do projeto no repositório https://github.com/harucard/CupomManager</br>
  <br>5-Após baixar o projeto,abra o prompt de comando no caminho da pasta dos arquivos e execute para instalar as dependências  o seguinte comando: </br>
         <p align="center"><b>npm install</b></p>
+ <br>5.1-Apenas se houver erro de dependencia do React</br>
+         <p align="center"><b>composer require laravel/ui</b>()</p>
+        <p align="center"><b>php artisan ui react</b></p>
  <br>6-Abra o terminal na pasta dos arquivos e execute</br>
        <p align="center"><b>php artisan serve</b></p>
  <br>7-Acesse o navegador no endereço localhost:8000 e se tudo estiver correto o app irá carregar</br>
@@ -83,6 +93,15 @@ Laravel foi desenvolvido sob o MIT License, tendo seu código-fonte hospedado no
  pois alguns componentes do React utiliza o conceito de componenetes controlados e não controlados,que tem como vantagem um  maior controle do componente mas dificulta a implementação demandando mais tempo.
  Quanto a organização confesso que o código está horrivel mas preferi deixar assim devido ao meu desconhecimento da estrutura do Framework Laravel.Eu não sabia o que eu podia ou não remover.Um exemplo é o arquivo SaleController na pasta Http/Controllers onde haverá  métodos vazios e sem implemetação.Por falta de conhecimento melhor sobre a ferramenta não saberia informar se o código continuaria a funcionar e minha dúvida a esse respeito vem da linguagem Java quando voce tem uma classe que é uma interface,a outra classe que implemetar a interface precisa ter todos os métodos,mesmo que estejam vazios ou então será lançado uma Exception.
  O padrão de programação também deixou a desejar.Eu gosto de configurar Lints para manter o padrão de programação mas acabei esquecendo de colocar e quando lembrei ja estava no meio do projeto e com medo de alguma configuração a mais causasse algum tipo de problema.
+ 
+ ### Referencias
+ 
+ <br>NodeJS-https://pt.wikipedia.org/wiki/Node.js</br>
+ <br>Xampp-https://pt.wikipedia.org/wiki/XAMPP</br>
+ <br>Visual Studio Code-https://pt.wikipedia.org/wiki/Visual_Studio_Code</br>
+ <br>Composer-https://ajuda.locaweb.com.br/wiki/composer-cloud-hosting/</br>
+ <br>Laravel-https://pt.wikipedia.org/wiki/Laravel</br>
+ <br>ReactJS-https://pt.wikipedia.org/wiki/React_(JavaScript)</br>
 
  
  
