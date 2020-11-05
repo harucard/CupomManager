@@ -71419,26 +71419,25 @@ var Add = function Add() {
 
             case 4:
               history.push('/CupomManager');
-              _context.next = 11;
+              _context.next = 10;
               break;
 
             case 7:
               _context.prev = 7;
               _context.t0 = _context["catch"](1);
               alert('Falha em adicionar cupom');
-              console.error();
 
-            case 11:
-              _context.prev = 11;
+            case 10:
+              _context.prev = 10;
               setLoading(false);
-              return _context.finish(11);
+              return _context.finish(10);
 
-            case 14:
+            case 13:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[1, 7, 11, 14]]);
+      }, _callee, null, [[1, 7, 10, 13]]);
     }));
 
     return function onAddSubmit() {

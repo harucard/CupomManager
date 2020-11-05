@@ -26,14 +26,14 @@ class CupomController extends Controller
     {
         $request->validate([
             'title' =>'required',
-            'expires_in' => 'required',
-            'quantity' => 'required|Numeric',
+            // 'expires_in' => 'required',
+            'quantity' => 'Numeric',
             'status' => 'required'
         ]);
         $cupom = new Cupom([
             'title'=> $request->title,
-            'expires_in'=> $request->expires_in,
-            'quantity'=> $request->quantity,
+            // 'expires_in'=> $request->expires_in,
+            // 'quantity'=> $request->quantity,
             'status'=> $request->status,
             
         ]);

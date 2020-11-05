@@ -25,9 +25,10 @@ const Add = () =>{
         title,expires_in,quantity,status,
       })
       history.push('/CupomManager');
-    }catch{
+    }catch(error){
+     
       alert('Falha em adicionar cupom')
-      console.error();
+      
       
     } finally{
       setLoading(false);

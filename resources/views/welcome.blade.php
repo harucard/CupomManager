@@ -21,7 +21,6 @@
         justify-content: center;         
         align-items: center
 "></div>
-<p>challenge-02</p>
 <script src="{{ asset('js/app.js') }}" ></script>
        </div>
     </body>
